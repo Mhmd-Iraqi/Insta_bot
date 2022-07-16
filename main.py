@@ -14,5 +14,5 @@ def h(message):
 		sf = Dark.Create(username,password,name)
 		l=f"{sf}"
 		return l
-if __name__ =="__main__":
-    bot.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
+bot.run()
