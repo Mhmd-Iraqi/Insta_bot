@@ -1,12 +1,7 @@
-import requests,user_agent,json,flask,telebot,random,os,sys
-import telebot,darklib
-from telebot import types
-from user_agent import generate_user_agent
-import logging
-from config import *
-from flask import Flask, request
+from flask import *
+from darklib import *
 bot = Flask(__name__)
-@bot.ruote("/")
+@bot.route("/")
 def h(message):
 		username=request.args.get("username")
 		password=request.args.get("password")
@@ -14,5 +9,6 @@ def h(message):
 		sf = Dark.Create(username,password,name)
 		l=f"{sf}"
 		return l
-
+		
+		
 bot.run()
