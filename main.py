@@ -1,4 +1,4 @@
-import requests,nstaloader,base64
+import requests,instaloader,base64
 from flask import *
 api = Flask(__name__)
 @api.route("/")
