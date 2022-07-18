@@ -1,4 +1,4 @@
-import telebot,requests,instaloader,base64
+import telebot,requests,instaloader,base64,os
 from telebot import *
 from config import *
 from flask import *
@@ -155,7 +155,7 @@ def getstorm(llll,my):
  		general_coin=int(general_coin)
  		if follow_coin >=50:
  			if general_coin>=50:
- 				message="Successful Follow_Coin , Error General_Coin"
+ 				message="Successful Follow_Coin , Successful General_Coin"
  			else:
  				message="Successful Follow_Coin , Error General_Coin"
  		else:
@@ -325,7 +325,7 @@ def getmaroc(llll,my):
  		general_coin=int(general_coin)
  		if follow_coin >=50:
  			if general_coin>=50:
- 				message="Successful Follow_Coin , Error General_Coin"
+ 				message="Successful Follow_Coin ,Successful General_Coin"
  			else:
  				message="Successful Follow_Coin , Error General_Coin"
  		else:
@@ -352,8 +352,7 @@ bot=telebot.TeleBot(BOT_TOKEN)
 
 
 server=Flask (__name__)
-logger = telebot.logger
-logger.setLevel(logging.DEBUG)
+
 
 
 @bot.message_handler(commands=['start'])
