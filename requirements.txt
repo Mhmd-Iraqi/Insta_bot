@@ -1,5 +1,5 @@
 flask
 requests
 telebot
-pyTelegramBotApi=3.7.7
+pyTelegramBotApi==3.7.7
 instaloader
