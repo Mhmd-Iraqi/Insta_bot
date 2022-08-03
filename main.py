@@ -1,6 +1,6 @@
 import requests,base64,instaloader,random,os,telebot
 import config
-
+from config import *
 from flask import *
 from telebot import *
 
