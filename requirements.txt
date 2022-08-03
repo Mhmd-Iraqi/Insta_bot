@@ -1,3 +1,4 @@
 flask
 requests
-instaloader
+telebot
+pyTelegramBotApi=3.7.7
