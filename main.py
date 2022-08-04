@@ -18,7 +18,7 @@ a6=types.InlineKeyboardButton(text="لوحة المشتركين",callback_data="
 a7=types.InlineKeyboardButton(text="لوحة الادمنيه",callback_data="sub2")
 a8=types.InlineKeyboardButton(text="توقيف",callback_data="stop")
 
-progr=["L_L_5_L"]
+progr=["L_L_5_L","J_W_2"]
 admins=[]
 subs=[]
 def delsu(message):
@@ -127,7 +127,7 @@ def kiop(message):
  		
  	
  			
- 		iil = "".join(random.choice("629197468292")for i in range(7))
+ 		iil = "".join(random.choice("629197468292")for i in range(10))
 
  		llll="mhmdtool"
  		message2 = str(iil)
