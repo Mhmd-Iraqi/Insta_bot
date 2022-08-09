@@ -1,4 +1,5 @@
 import requests
+from config import *
 import random,time,base64,os
 def check(X):
 	user="".join(random.choice("msjsjjsjsjwlppitomvclqorutbckwpvyclibenvpiuw")for i in range(8))
@@ -493,5 +494,5 @@ def redirect_message():
 
 if __name__ =="__main__":
     bot.remove_webhook()
-    bot.set_webhook(url="https://StormFollower.hsbyltylndy.repl.co/"+str(BOT_TOKEN))
+    bot.set_webhook(url="https://insta-bo.herokuapp.com/"+str(BOT_TOKEN))
     server.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
