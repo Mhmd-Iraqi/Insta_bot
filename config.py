@@ -1,2 +1,2 @@
-BOT_TOKEN = "5318484779:AAEcGFkQbPqqgC2TeOUWfieiwu_Z-3zomwY"
+BOT_TOKEN = "5479271930:AAHjkkARpHsIjXst2QSqEZBOZEVNWMaj7Vw"
 APP_URL = "https://insta-bo.herokuapp.com/" + BOT_TOKEN
