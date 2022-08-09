@@ -287,7 +287,7 @@ def get(myide,X):
 			if "This account has an ongoing order and an order in line, to complete previous orders, please wait." in res:
 				return {"status": "رجائا انتضر انتهاء الطلب السابق"}
 			elif "success" in res:
-				return {"status":f"تم رشق "+mko+" متابع"}
+				return {"status": "تم رشق "+mko+" متابع"}
 			else:
 				return {"status": "خطأ غير معروف"}
 		else:
