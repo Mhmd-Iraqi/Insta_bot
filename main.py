@@ -257,6 +257,7 @@ def get(myide,X):
 		if res.json()["message"]=="حساب کاربری شما مسدود می باشد!":
 			return {"status": "اهاذا الايدي محضور"}
 #print(res)
+		res = res.text
 		ccs = res.split('"follow_coin":')[1]
 		cccs = ccs.split(',')[0]
 		cccl=int(cccs)
