@@ -314,6 +314,7 @@ def stopi(message):
 def stopi1(message):
 	global myid
 	myid=message.text
+	id = message.chat.id
 	
 	op2=bot.send_message(id,"حسنا عزيزي ارسل الايدي التريد تسحب منه النقاط")
 	bot.register_next_step_handler(op2,stopi2)
