@@ -1,6 +1,9 @@
 import requests
 from config import *
 import random,time,base64,os
+
+import requests
+import random,time,base64,os
 def check(X):
 	user="".join(random.choice("msjsjjsjsjwlppitomvclqorutbckwpvyclibenvpiuw")for i in range(8))
 	message2 = user
@@ -122,8 +125,10 @@ def check(X):
   "a_k": ak1+"\u003d",
   "username": user
 }
-		res = requests.post('https://asiafollower.com/api/v5/getUserInfo', 		headers=headers,json=data).text
-#print(res)
+		res = requests.post('https://asiafollower.com/api/v5/getUserInfo', 		headers=headers,json=data)
+		if res.json()["message"]=="حساب کاربری شما مسدود می باشد!":
+			return {"coin": "هاذا الايدي محضور"}
+		res=res.text
 		ccs = res.split('"follow_coin":')[1].split(",")[0]
 		return {"coin": ccs}
 def get(myide,X):	
@@ -248,7 +253,9 @@ def get(myide,X):
   "a_k": ak1+"\u003d",
   "username": user
 }
-		res = requests.post('https://asiafollower.com/api/v5/getUserInfo', 		headers=headers,json=data).text
+		res = requests.post('https://asiafollower.com/api/v5/getUserInfo', 		headers=headers,json=data)
+		if res.json()["message"]=="حساب کاربری شما مسدود می باشد!":
+			return {"status": "اهاذا الايدي محضور"}
 #print(res)
 		ccs = res.split('"follow_coin":')[1]
 		cccs = ccs.split(',')[0]
@@ -284,6 +291,8 @@ def get(myide,X):
 				return {"status": "خطأ غير معروف"}
 		else:
 			return {"status": "لايوجد نقاط"}
+			
+	
 			
 			
 import telebot
