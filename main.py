@@ -1,7 +1,7 @@
 import requests,base64,instaloader,random,os,telebot
 from flask import *
 from telebot import *
-BOT_TOKEN="5318484779:AAEcGFkQbPqqgC2TeOUWfieiwu_Z-3zomwY"
+BOT_TOKEN="5479271930:AAHjkkARpHsIjXst2QSqEZBOZEVNWMaj7Vw"
 stopi=[] 			
 
 
@@ -195,7 +195,7 @@ import os
 E = "\033[1;32m"
 L= "\033[1;35m"
 B="\033[1;36m"
-bot=TeleBot("5318484779:AAEcGFkQbPqqgC2TeOUWfieiwu_Z-3zomwY")
+bot=TeleBot("5479271930:AAHjkkARpHsIjXst2QSqEZBOZEVNWMaj7Vw")
 @bot.message_handler(commands=["start"])
 
 def mj(message):
